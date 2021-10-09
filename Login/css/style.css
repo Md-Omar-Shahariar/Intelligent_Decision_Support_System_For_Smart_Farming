@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  
+
   list-style: none;
   box-sizing: border-box;
 }
@@ -40,7 +40,7 @@ label.logo{
   display: inline-block;
   color: white;
   font-family: 'Caveat';
-  font-size: 35px;
+  font-size: 45px;
   line-height: 80px;
   padding-left: 50px;
   font-weight: bold;
