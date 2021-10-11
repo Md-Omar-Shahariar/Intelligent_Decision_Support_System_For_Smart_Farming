@@ -5,6 +5,29 @@
   box-sizing: border-box;
 
 }
+form.box {
+  height: 70vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  background: rgba(255, 255, 255,0.5);
+  cursor: pointer;
+  border-radius: 10%;
+
+  }
+  .box h1 {
+  margin-top: 10%;
+  color: green;
+
+  text-transform: uppercase;
+  font-weight: 900;
+}
+form.box:hover{
+  background: rgba(0, 255, 200,0.3);
+}
 body{
   background-image: linear-gradient(to top,rgba(0,255,0,0.0),rgba(0,255,0,0.7)),url('../image/1.jpeg');
   background-repeat: no-repeat;
@@ -93,13 +116,16 @@ button{
 .container form .user-details{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-batween;
+  margin-left: 20px;
+
 
 
 }
 form .user-details .input-box{
   display: flex;
   flex-direction: column;
+
 
   margin: 20px 0 12px 0;
   width:calc((100% / 2));
@@ -177,6 +203,10 @@ button:hover{
   }
   .body{
     max-width: 100%;
+  }
+  button{
+    margin: 0 0 10px 0;
+
   }
 
 }
