@@ -205,8 +205,8 @@ button:hover{
 
 
   }
-  .user-details ::-webkit-scrollbar{
-    width: 0;
+  .user-details::-webkit-scrollbar{
+    width: none;
   }
   .body{
     max-width: 100%;
