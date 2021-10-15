@@ -4,6 +4,8 @@
 
   list-style: none;
   box-sizing: border-box;
+ 
+
 
 }
 body {
@@ -34,11 +36,13 @@ header{
 
 
 }
+
 nav{
   /* background: rgba(107, 255, 99, 0.2); */
   height: 80px;
   width: 100%;
   background-color: rgba(34, 128, 15, 0.4);
+  position: fixed;
 
 }
 label.logo{
@@ -66,6 +70,10 @@ nav ul li{
 nav ul li a{
   color: white;
 }
+nav ul+li a{
+  color: blue;
+}
+
 button{
   margin: 0 10px;
   font-size: 15px;
@@ -147,7 +155,7 @@ section::after {
 .container .card .content .imgBX img{
   position: absolute;
   top: 0;
-  laft:0;
+  left:0;
   width: 100%;
   height: 100%;
   object-fit: cover;

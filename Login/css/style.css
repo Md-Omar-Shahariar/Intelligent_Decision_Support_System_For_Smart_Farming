@@ -103,7 +103,7 @@ form.box:hover{
   font-weight: 900;
 }
 
-.box input[type="text"],
+.box input[type="tel"],
 .box input[type="password"] {
   border: 0;
   background: none;
@@ -127,7 +127,7 @@ form.box:hover{
   border-color: rgb(34, 128, 15);
   background: rgba(34, 128, 15, 0.5);
 }
-.box input[type="text"]:focus,
+.box input[type="tel"]:focus,
 .box input[type="password"]:focus {
   width: 280px;
   border-color: rgb(34, 128, 15);
