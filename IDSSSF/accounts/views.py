@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect
 # from accounts.forms import UserAdminCreationForm
 from accounts.forms import UserAdminCreationForm
 
-@login_required()
+
 def register(req):
     form = UserAdminCreationForm()
     if req.method == 'POST':
@@ -18,6 +18,12 @@ def profile(request):
     content = {}
     return render(request, 'profile.html', content)
 
+@login_required()
 def homepage(request):
     content = {}
     return render(request, 'homepage.html', content)
+
+
+def test(request):
+    content = {}
+    return render(request, 'signup/html/signup.html', content)
