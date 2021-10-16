@@ -12,7 +12,7 @@ def register(req):
         if form.is_valid():
             form.save()
             return redirect('registration')
-    return render(req, 'register.html', {'form': form})
+    return render(req, 'signup/html/signup.html', {'form': form})
 
 def profile(request):
     content = {}

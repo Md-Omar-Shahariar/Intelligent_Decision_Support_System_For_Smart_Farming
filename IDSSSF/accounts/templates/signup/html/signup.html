@@ -27,38 +27,26 @@
       </nav>
     </header>
     <div class="container">
-      <form class="box" action="index.html" method="post">
+      <form class="box" method="POST">
+      {% csrf_token %}
         <h1>Sign-Up</h1>
         <div class="user-details">
           <div class="input-box">
             <span class="details">Full name : </span>
-            <input type="text" name="name" placeholder="Enter your name" />
+            {{form.first_name}}
           </div>
 
           <div class="input-box">
             <span class="details">Password : </span>
-            <input
-              type="password"
-              name="password"
-              placeholder="Enter your password"
-            />
+            {{form.password1}}
           </div>
           <div class="input-box">
-            <span class="details">Number : </span>
-            <input
-              type="tel"
-              name="number"
-              placeholder="01XXXXXXXXX"
-              pattern="[0-9]{5}[0-9]{3}[0-9]{3}"
-            />
+            <span class="details">Phone Number : </span>
+            {{form.phone}}
           </div>
           <div class="input-box">
             <span class="details">Confirm password : </span>
-            <input
-              type="password"
-              name="cpassword"
-              placeholder="Confirm your password"
-            />
+            {{form.password2}}
           </div>
           <div class="button">
             <button type="submit" name="button">Sign-Up</button>
