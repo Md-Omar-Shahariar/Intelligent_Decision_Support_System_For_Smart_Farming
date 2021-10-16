@@ -13,3 +13,11 @@ def register(req):
             form.save()
             return redirect('registration')
     return render(req, 'register.html', {'form': form})
+
+def profile(request):
+    content = {}
+    return render(request, 'profile.html', content)
+
+def homepage(request):
+    content = {}
+    return render(request, 'homepage.html', content)
