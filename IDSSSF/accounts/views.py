@@ -19,12 +19,17 @@ def profile(request):
     content = {}
     return render(request, 'profile.html', content)
 
-@login_required()
+
 def homepage(request):
     current_user = request.user
-    name = current_user.first_name
-    content = {'name':name}
-    return render(request, 'homepage.html', content)
+    content = {'user':current_user}
+    if current_user.is_authenticated:
+        return render(request, 'homepage.html', content)
+    else:
+        return loginPage(request)
+
+
+    
 
 
 def loginPage(request):
@@ -40,3 +45,9 @@ def loginPage(request):
 
     content = {}
     return render(request, 'registration/login.html', content)
+
+
+def logoutPage(request):
+    if request.method == 'POST':
+        logout(request)
+        return redirect('home')
