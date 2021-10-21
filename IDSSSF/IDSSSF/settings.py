@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'users',
     'accounts',
     'image_upload',
+    'solution',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

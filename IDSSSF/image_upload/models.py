@@ -7,5 +7,6 @@ class ImageModel(models.Model):
     created_on = models.DateTimeField(auto_now_add=True, null=True)
     owner = models.CharField(max_length=20)
 
+
     def __str__(self):
         return self.owner

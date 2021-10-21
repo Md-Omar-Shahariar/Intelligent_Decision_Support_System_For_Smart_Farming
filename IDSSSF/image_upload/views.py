@@ -13,9 +13,9 @@ def image_view(request):
         
   
         if form.is_valid():
-            
-            form.owner = current_user.first_name
-            form.save()
+            post = form.save(commit=False)
+            post.owner = current_user.phone
+            post.save()
             return redirect('display_images')
     else:
         form = ImageUploadForm()

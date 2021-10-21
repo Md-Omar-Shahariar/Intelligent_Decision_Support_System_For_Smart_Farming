@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solution</title>
+</head>
+<body>
+    <h2>{{ sol.disease_name }}</h2>
+    {% for p in sol.prevent.values %}
+        {% for m in p %}
+            <p>AB = {{m}}</p>
+        {% endfor %}
+            
+           
+    {% endfor %}
+</body>
+</html>

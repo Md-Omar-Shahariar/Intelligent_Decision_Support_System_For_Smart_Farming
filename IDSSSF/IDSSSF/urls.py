@@ -19,12 +19,13 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("accounts.urls")),
     path('image_upload/', include("image_upload.urls")),
     #path('accounts/', include('django.contrib.auth.urls')),
-    #path('', include("users.urls")),
+    path('sol/', include("solution.urls")),
 ]
 
 if settings.DEBUG:
