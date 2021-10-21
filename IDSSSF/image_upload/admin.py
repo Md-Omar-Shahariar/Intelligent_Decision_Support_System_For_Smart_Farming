@@ -4,4 +4,10 @@ from .models import ImageModel
 
 # Register your models here.
 
-admin.site.register(ImageModel)
+class ImageModelAdmin(admin.ModelAdmin):
+    list_display = ('owner', 'created_on', 'image_url')
+
+
+
+
+admin.site.register(ImageModel, ImageModelAdmin)

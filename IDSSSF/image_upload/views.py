@@ -7,16 +7,19 @@ from .forms import *
   
 # Create your views here.
 def image_view(request):
-  
+    current_user = request.user
     if request.method == 'POST':
         form = ImageUploadForm(request.POST, request.FILES)
+        
   
         if form.is_valid():
+            
+            form.owner = current_user.first_name
             form.save()
-            return redirect('success')
+            return redirect('display_images')
     else:
         form = ImageUploadForm()
-    return render(request, 'image_upload.html', {'form' : form})
+    return render(request, 'image_upload.html', {'form' : form,'user':current_user})
   
   
 def success(request):
