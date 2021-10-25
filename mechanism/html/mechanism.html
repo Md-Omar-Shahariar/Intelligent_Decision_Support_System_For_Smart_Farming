@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lOGIN</title>
+    <title>Mechanism</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,47 +24,50 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans+Mono:wght@900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
   </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-md bgc navbar-dark">
-        <a class="navbar-brand" href="#"><span>Smart Farming</span></a>
-        <button
-          class="navbar-toggler navbar-toggler-right"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="#">Home </a>
-            <a class="nav-item nav-link" href="#"><span>About-Us</span></a>
-            <a class="nav-item nav-link" href="#"><span>Contact-Us</span></a>
-            <a class="nav-item nav-link" href="../../signup/html/signup.html"
-              ><span>Sign-Up</span></a
-            >
+  <body style="background-color: darkseagreen">
+    <div>
+      <header>
+        <nav class="navbar navbar-expand-md bgc navbar-dark">
+          <a class="navbar-brand" href="#"><span>Smart Farming</span></a>
+          <button
+            class="navbar-toggler navbar-toggler-right"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link active" href="#">Home </a>
+              <a class="nav-item nav-link" href="#"><span>About-Us</span></a>
+              <a class="nav-item nav-link" href="#"><span>Contact-Us</span></a>
+            </div>
           </div>
+        </nav>
+      </header>
+      <!--Drag-->
+
+      <div class="drag">
+        <div class="drag-area">
+          <div class="icon">
+            <i class="cloud upload icon"></i>
+          </div>
+          <h5>Drag & Drop to Upload Image</h5>
+          <span>OR</span>
+          <button>Browse File</button>
         </div>
-      </nav>
-    </header>
-    <div class="container">
-      <form class="box" action="index.html" method="post">
-        <h1>Log-in</h1>
-        <input
-          type="tel"
-          name="number"
-          placeholder="Log-In Number"
-          pattern="[0-9]{5}[0-9]{3}[0-9]{3}"
-        />
-        <input type="password" placeholder="Password" name="" />
-        <input type="submit" name="" id="" value="Login" />
-      </form>
+      </div>
     </div>
+    <script src="../js/script.js"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
