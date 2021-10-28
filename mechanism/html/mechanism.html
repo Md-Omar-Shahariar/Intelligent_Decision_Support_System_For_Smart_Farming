@@ -47,7 +47,11 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-              <a class="nav-item nav-link active" href="#">Home </a>
+              <a
+                class="nav-item nav-link active"
+                href="../../Home/html/index.html"
+                >Home
+              </a>
               <a class="nav-item nav-link" href="#"><span>About-Us</span></a>
               <a class="nav-item nav-link" href="#"><span>Contact-Us</span></a>
             </div>
@@ -55,17 +59,20 @@
         </nav>
       </header>
       <!--Drag-->
-
-      <div class="drag">
-        <div class="drag-area">
-          <div class="icon">
-            <i class="cloud upload icon"></i>
+      <form action="#">
+        <div class="drag">
+          <div class="drag-area">
+            <div class="icon">
+              <i class="cloud upload icon"></i>
+            </div>
+            <h5>Drag & Drop to Upload Image</h5>
+            <span>OR</span>
+            <button>Browse File</button>
+            <input type="file" hidden />
           </div>
-          <h5>Drag & Drop to Upload Image</h5>
-          <span>OR</span>
-          <button>Browse File</button>
         </div>
-      </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
     </div>
     <script src="../js/script.js"></script>
 

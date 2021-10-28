@@ -47,9 +47,9 @@ button {
   align-items: center;
   height: 100vh;
 }
-input[type="file"] {
+/* input[type="file"] {
   display: none;
-}
+} */
 label {
   display: flex;
   justify-content: center;
@@ -78,8 +78,9 @@ button[type="submit"] {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 5%;
 
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 .drag-area {
   border: 2px dashed white;
@@ -90,6 +91,12 @@ button[type="submit"] {
   justify-content: center;
   border-radius: 10px;
   flex-direction: column;
+}
+.drag-area img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 10px;
 }
 .act {
   border: 2px solid white;
@@ -110,4 +117,7 @@ button[type="submit"] {
   font-weight: 500;
   border-radius: 10px;
   cursor: pointer;
+}
+form button {
+  margin-top: 50px;
 }
