@@ -1,1 +1,10 @@
 {"medicine": ["If the symptoms of the diseases are seen then apply extra 1 kg of MOP (Muriate of Potash) per 6.6 decimal area. ", "Use a solution of MOP 6 g/L, Zn 4g/L, Sulphur 6 g/L twice in a 7 days interval if the diseases come naturally.", "If the bacterial leaf blight is attacked the crop drains out all the water and keeps the field dry for the 7 to 10 days."]}
+
+<!--
+{% for image in uploaded_images %}
+            <div class="col-md-4">
+                    
+                     <img src="{{ image.image_url.url }}" class="img-responsive" style="width: 100%; float: left; margin-right: 10px;" />
+            </div>
+    {% endfor %}
+-->

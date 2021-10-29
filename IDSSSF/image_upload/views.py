@@ -26,9 +26,10 @@ def success(request):
     return HttpResponse('successfully uploaded')
 
 def display_images(request):
+    current_user = request.user
   
     if request.method == 'GET':
   
         # getting all the objects of hotel.
-        Images = ImageModel.objects.all() 
+        Images = ImageModel.objects.filter(owner=current_user.phone).latest('created_on') 
         return render(request, 'display_image.html',{'uploaded_images' : Images})
