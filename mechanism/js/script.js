@@ -42,10 +42,10 @@ dropArea.addEventListener("drop", (event) => {
 });
 function showFile() {
     let fileType = file.type;
-    console.log(fileType);
+    // console.log(fileType);
     let validExtension = ["image/jpeg", "image/jpg", "image/png"];
     if (validExtension.includes(fileType)) {
-        console.log("This is Image");
+        // console.log("This is Image");
         let fileReader = new FileReader();
         fileReader.onload = () => {
             let fileURL = fileReader.result;
@@ -59,3 +59,9 @@ function showFile() {
         dropArea.classList.remove("act");
     }
 }
+var form = document.getElementById('submit');
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    var image = document.getElementById("image");
+    console.log(image);
+})

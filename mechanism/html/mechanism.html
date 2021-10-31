@@ -30,7 +30,7 @@
     />
   </head>
   <body style="background-color: darkseagreen">
-    <div>
+    <div class="">
       <header>
         <nav class="navbar navbar-expand-md bgc navbar-dark">
           <a class="navbar-brand" href="#"><span>Smart Farming</span></a>
@@ -68,10 +68,12 @@
             <h5>Drag & Drop to Upload Image</h5>
             <span>OR</span>
             <button>Browse File</button>
-            <input type="file" hidden />
+            <input type="file" id="image" hidden />
           </div>
         </div>
-        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="submit" class="btn btn-success" id="submit">
+          Submit
+        </button>
       </form>
     </div>
     <script src="../js/script.js"></script>

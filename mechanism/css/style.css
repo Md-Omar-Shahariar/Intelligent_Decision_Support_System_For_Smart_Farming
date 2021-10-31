@@ -79,6 +79,7 @@ button[type="submit"] {
   align-items: center;
   justify-content: center;
   margin-top: 5%;
+  width: 100%;
 
   /* min-height: 100vh; */
 }

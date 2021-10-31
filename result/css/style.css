@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+.bgc {
+  color: white;
+  background: rgba(3, 77, 2, 0.4);
+  font-weight: bolder;
+}
+
+.container-fluid {
+  width: 100%;
+}
+nav {
+  top: 0%;
+  position: relative;
+  position: fixed;
+}
+.navbar-brand {
+  font-weight: bolder;
+  font-size: 35px;
+  font-family: "Dancing Script", cursive;
+  margin-left: 30px;
+}
+nav span {
+  color: rgb(145, 255, 0);
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(238, 238, 238);
+}
+
+.container-fluid {
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+.banner {
+  display: block;
+  background-color: green;
+  width: 100%;
+}
+.banner > h1 {
+  position: relative;
+  color: rgb(145, 255, 0);
+  margin-top: 10%;
+  /* font-size: 35px; */
+  font-family: monospace;
+  font-weight: 900;
+  font-size: 60px;
+}
+.info {
+  margin: 30px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+  flex-direction: column;
+  height: 100%;
+}
+.heading {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+hr {
+  border: 1px dashed green;
+}
+.heading > span {
+  color: black;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-family: cursive;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+.card1 {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: center; */
+}
+.card1 span {
+  color: black;
+  font-weight: bold;
+  font-family: cursive;
+}
+@media (max-width: 842px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card1 {
+    width: 100%;
+  }
+
+  .banner > h1 {
+    font-size: 20px;
+  }
+}
+
+.res {
+  color: black;
+  font-weight: 900;
+
+  width: 100%;
+  font-family: cursive;
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: 2px;
+  display: flex;
+  flex-wrap: wrap;
+}
+body {
+  height: 100%;
+}
+.imageshow {
+  height: 300px;
+  width: 300px;
+  border: 2px green dashed;
+  border-radius: 10px;
+}
+.imageshow img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 10px;
+}
+.description {
+  display: flex;
+
+  width: 100%;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  font-weight: 500;
+  font-family: sans-serif;
+  justify-content: space-between;
+  padding: 10% 10%;
+}
+.left {
+  width: 50%;
+}
