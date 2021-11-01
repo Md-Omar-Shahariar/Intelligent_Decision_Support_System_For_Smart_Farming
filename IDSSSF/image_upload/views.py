@@ -3,6 +3,8 @@ from django.shortcuts import render
 # Create your views here.
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
+
+from solution.models import SolutionModel
 from .forms import *
 from keras.preprocessing import image
 from keras import layers , models
@@ -81,11 +83,37 @@ def image_view(request):
             return redirect('display_images')
     else:
         form = ImageUploadForm()
-    return render(request, 'image_upload.html', {'form' : form,'user':current_user})
+    return render(request, 'image_upload_v1.html', {'form' : form,'user':current_user})
   
   
 def success(request):
     return HttpResponse('successfully uploaded')
+
+def index_to_class_name(index):
+    c_name = ''
+    if index == 0:
+        c_name = 'Bacterial Leaf Blight'
+    elif index == 1:
+        c_name = 'Brown Plant Hopper'
+    elif index == 2:
+        c_name = 'Brown Spot'
+    elif index == 3:
+        c_name = 'Rice False Smut'
+    elif index == 4:
+        c_name = 'Healthy Plant'
+    elif index == 5:
+        c_name = 'Hispa'
+    elif index == 6:
+        c_name = 'Leaf Smut'
+    elif index == 7:
+        c_name = 'Neck Blast'
+    elif index == 8:
+        c_name = 'Sheath Blight Rot'
+    elif index == 9:
+        c_name = 'Stem Borer'
+    return c_name
+
+
 
 def display_images(request):
     current_user = request.user
@@ -99,4 +127,10 @@ def display_images(request):
         image_url_modified = '/Users/shoebadnan/Desktop/Intelligent_Decision_Support_System_For_Smart_Farming/IDSSSF/' + Images.image_url.url
         classes = predict_img(image_url_modified , model)
         label = get_class_label(classes)
-        return render(request, 'display_image.html',{'uploaded_images' : Images,'class_no':label})
+        print('Label = '+ str(label))
+        class_name = index_to_class_name(label)
+        print('Class Name = '+ class_name)
+        solution = SolutionModel.objects.filter(disease_name = str(class_name))
+        print(solution)
+        print('About = '+ str(solution[0].disease_name))
+        return render(request, 'display_image_v1.html',{'uploaded_images' : Images,'solution':solution[0]})

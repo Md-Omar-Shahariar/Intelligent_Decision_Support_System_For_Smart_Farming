@@ -20,6 +20,7 @@ class SolutionModel(models.Model):
     prevent = models.JSONField(default=prevent_default)
     medicine = models.JSONField(default=medicine_default)
     caution = models.JSONField(default=caution_default)
+    medicine_image = models.ImageField(upload_to='solution/',blank = True)
 
     
 
