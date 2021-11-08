@@ -26,11 +26,20 @@ nav {
   position: relative;
   position: fixed;
 }
-.navbar-brand > span {
+.navbar-brand {
   font-weight: bolder;
   font-size: 35px;
   font-family: "Dancing Script", cursive;
   margin-left: 30px;
+  padding: 20px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.navbar-brand span {
+  font-size: 40px;
+}
+.navbar-nav a {
+  font-size: 18px;
 }
 button {
   margin: 0 10px;
