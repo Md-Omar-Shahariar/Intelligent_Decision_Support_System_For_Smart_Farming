@@ -16,6 +16,9 @@ body {
 
   min-height: 100vh;
 }
+.navbar-nav a {
+  font-size: 18px;
+}
 form.box {
   height: 70vh;
   width: 60vw;

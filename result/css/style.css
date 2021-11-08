@@ -46,20 +46,7 @@ body {
   width: 100%;
   text-align: center;
 }
-.banner {
-  display: block;
-  background-color: green;
-  width: 100%;
-}
-.banner > h1 {
-  position: relative;
-  color: rgb(145, 255, 0);
-  margin-top: 10%;
-  /* font-size: 35px; */
-  font-family: monospace;
-  font-weight: 900;
-  font-size: 60px;
-}
+
 .info {
   margin: 30px;
   display: flex;
@@ -87,7 +74,7 @@ hr {
   font-weight: bolder;
   letter-spacing: 2px;
   font-size: 30px;
-  font-family: cursive;
+  font-family: monospace;
 }
 .cards {
   display: flex;
@@ -107,7 +94,7 @@ hr {
 .card1 span {
   color: black;
   font-weight: bold;
-  font-family: arial;
+  font-family: monospace;
   font-size: 25px;
 }
 @media (max-width: 842px) {
@@ -147,7 +134,7 @@ hr {
 .left div span p {
   font-size: 18px;
   font-weight: 500;
-  font-family: Arial;
+  font-family: monospace;
 }
 
 body {
@@ -174,7 +161,7 @@ body {
   flex-wrap: wrap;
   padding: 50px 0;
   font-weight: 500;
-  font-family: sans-serif;
+  font-family: monospace;
   justify-content: space-between;
   padding: 10% 10%;
 }
