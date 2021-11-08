@@ -122,92 +122,7 @@ img {
 .card1 h1 {
   padding-bottom: 10px;
 }
-section {
-  display: flex;
-}
 
-.container-fulid1 {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.container-fulid1 .card {
-  position: relative;
-  width: 300px;
-  height: 400px;
-  background: rgb(255, 255, 255, 0.05);
-  margin: 20px;
-  box-shadow: 0 15px 35px rgb(0, 0, 0, 0.2);
-  border-radius: 15px;
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(10px);
-}
-.container-fulid1 .card .content {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  opacity: 0.5;
-  transition: 0.5s;
-}
-.container-fulid1 .card:hover .content {
-  opacity: 1;
-}
-.container-fulid1 .card .content .imgBx {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 10px solid rgb(0, 0, 0, 0.25);
-}
-.imgBx img {
-  height: 200px;
-}
-.container-fulid1 .card .content .contentBx h3 {
-  color: black;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 500px;
-  font-size: 18px;
-  text-align: center;
-  margin: 20px 0 10px;
-  line-height: 1.1em;
-}
-.container-fulid1 .card .content .contentBx h3 span {
-  font-size: 12px;
-  font-weight: 300;
-  text-transform: initial;
-  color: black;
-}
-.container-fulid1 .card .sci {
-  position: absolute;
-  bottom: 50px;
-  display: flex;
-}
-.container-fulid1 .card .sci li {
-  list-style: none;
-  margin: -30px 5px;
-  transform: translateY(40px);
-  transition: 0.5s;
-  opacity: 0;
-  transition-delay: calc(0.1s * var(--i));
-}
-.container-fulid1 .card:hover .sci li {
-  transform: translateY(30px);
-  opacity: 1;
-}
-.container-fulid1 .card .sci li a {
-  color: white;
-  font-size: 24px;
-}
 .contact-body {
   width: 100%;
   flex-wrap: wrap;
@@ -304,6 +219,9 @@ section {
 .content .left-side .details .topic {
   font-size: 18px;
   margin-bottom: 10px;
+}
+.team-description {
+  display: inline;
 }
 
 @media (max-width: 1026px) {
