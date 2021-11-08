@@ -140,7 +140,23 @@ img {
   align-items: center;
   justify-content: center;
 }
-
+.button-upload {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.button-upload button {
+  padding: 30px 70px;
+  border-radius: 10px;
+  font-weight: 700;
+  background: rgba(14, 104, 14, 0.4);
+  color: aliceblue;
+  font-size: 30px;
+}
+.button-upload button:hover {
+  box-shadow: 0 5px 10px black;
+}
 .container-fulid2 {
   width: 100%;
   background: rgba(0, 220, 0, 0.2);
@@ -245,6 +261,14 @@ img {
   }
   .heading > span {
     font-size: 15px;
+  }
+  .button-upload button {
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-weight: 700;
+    background: rgba(14, 104, 14, 0.4);
+    color: aliceblue;
+    font-size: 20px;
   }
 }
 @media (max-width: 1221px) {
