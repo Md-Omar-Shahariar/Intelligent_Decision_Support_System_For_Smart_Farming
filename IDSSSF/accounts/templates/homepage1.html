@@ -1,0 +1,185 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans+Mono:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <link rel="stylesheet" href="{% static "homepage/homepage.css" %}" />
+
+    <title>HomePage</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <img src="{% static "images/2.jpeg" %}" alt="" />
+        <nav class="navbar navbar-expand-md bgc navbar-dark">
+          <a class="navbar-brand" href="#"><span>Smart Farming</span></a>
+          <button
+            class="navbar-toggler navbar-toggler-right"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link active" href="#">Home </a>
+              <a class="nav-item nav-link" href="{% url "about-us" %}"
+                ><span>About-Us</span></a
+              >
+              <a class="nav-item nav-link" href="#contact-us"
+                ><span>Contact-Us</span></a
+              >
+
+              <a class="nav-item nav-link" href="{% url "logout" %}"
+                ><span>Log-Out</span></a
+              >
+            </div>
+          </div>
+        </nav>
+        <div class="banner container-fluid">
+          <h1>
+            Intelligent Decision <br />
+            Support System for Smart Farming
+          </h1>
+        </div>
+      </div>
+      <div class="button-upload">
+        <a href="{% url "image_upload" %}" target="_blank"
+          ><button>Upload Image</button></a
+        >
+      </div>
+
+      <!--Card-->
+      <div class="info">
+        <div class="heading">
+          <span>Simple 3 Step for Intelligent Decission Support System</span>
+        </div>
+        <div class="cards">
+          <div class="card1">
+            <span class="body">
+              <h1>1</h1>
+              <p>
+                First sign up an account to create a new one or log in to an
+                existing account to get services from our system. Our system can
+                generate decisions regarding 9 of the common paddy crop
+                diseases, such as “Brown Plant Hopper” , “Bacterial Leaf
+                Blight”, “Brown Spot”, “False Smut”, “Healthy Plant”, “Hispa”,
+                “Leaf Smut”, “Neck Blast”, “Sheath Blight Rot”, “Stemborer”
+              </p>
+            </span>
+          </div>
+          <div class="card1">
+            <span class="body">
+              <h1>2</h1>
+              <p>
+                After you log in to the system, you will be redirected to the
+                Homepage and you will find an option to upload your affected
+                paddy crop photo. Please upload a close-range photo of your
+                problematic paddy crop for better result
+              </p>
+            </span>
+          </div>
+          <div class="card1">
+            <span class="body"
+              ><h1>3</h1>
+              <p>
+                After uploading the photo, our system will run in the background
+                and generate the best decisions regarding the crop problem. You
+                will be able to know the name of your problem, prevention,
+                precautions and the description of the medicine you should use
+                in your crop field
+              </p>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!--Contact Us-->
+      <div id="contact-us">
+        <section class="contact-body">
+          <div class="container-fulid2">
+            <div class="content">
+              <div class="left-side">
+                <div class="address details">
+                  <i class="map marker alternate icon black"></i>
+                  <div class="topic">Address</div>
+                  <div class="text-one">United International University</div>
+                </div>
+                <div class="phone details">
+                  <i class="phone icon black"></i>
+                  <div class="topic">Phone</div>
+                  <div class="text-one">+880-1622630550</div>
+                </div>
+                <div class="email details">
+                  <i class="envelope outline icon black"></i>
+                  <div class="topic">Email</div>
+                  <div class="text-one">osafridi00@gmail.com</div>
+                </div>
+              </div>
+
+              <div class="right-side">
+                <div class="topic-text"><span>Send Us Message</span></div>
+                <p>
+                  If you have any type of quries related to our project, you can
+                  send us message form here.
+                </p>
+
+                <form action="">
+                  <div class="input-box">
+                    <input type="text" placeholder="Enter your name" />
+                  </div>
+                  <div class="input-box">
+                    <input type="text" placeholder="Enter your email" />
+                  </div>
+                  <div class="input-box message-box">
+                    <textarea></textarea>
+                  </div>
+                  <div class="button">
+                    <input type="button" value="Send Message" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

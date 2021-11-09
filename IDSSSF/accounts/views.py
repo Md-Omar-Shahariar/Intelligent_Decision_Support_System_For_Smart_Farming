@@ -12,7 +12,7 @@ def register(req):
         form = UserAdminCreationForm(req.POST)
         if form.is_valid():
             form.save()
-            return redirect('registration')
+            return redirect('login')
     return render(req, 'signup/signup.html', {'form': form})
 
 def profile(request):
@@ -24,7 +24,7 @@ def homepage(request):
     current_user = request.user
     content = {'user':current_user}
     if current_user.is_authenticated:
-        return render(request, 'homepage.html', content)
+        return render(request, 'homepage1.html', content)
     else:
         return loginPage(request)
 
@@ -44,10 +44,13 @@ def loginPage(request):
             return redirect('home')
 
     content = {}
-    return render(request, 'registration/login.html', content)
+    return render(request, 'registration/login1.html', content)
 
 
 def logoutPage(request):
-    if request.method == 'POST':
-        logout(request)
-        return redirect('home')
+    logout(request)
+    return redirect('home')
+
+
+def aboutusPage(request):
+    return render(request, 'about_us.html')

@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* color: rgb(145, 255, 0); */
+    box-sizing: border-box;
+  }
+  .bgc {
+    color: white;
+    background: rgba(147, 233, 146, 0.2);
+    font-weight: bolder;
+  }
+  .container-fluid {
+    width: 100%;
+  }
+  nav {
+    top: 0%;
+    position: relative;
+    position: fixed;
+  }
+  .team {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .team span {
+    font-size: 50px;
+    margin-top: 50px;
+    font-family: monospace;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .team hr {
+    height: 1px;
+    border: 2px dashed black;
+    width: 320px;
+  }
+  
+  .navbar-brand {
+    font-weight: bolder;
+    font-size: 35px;
+    font-family: "Dancing Script", cursive;
+    margin-left: 30px;
+    padding: 20px 0;
+  }
+  .navbar-brand span {
+    font-size: 40px;
+  }
+  body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(65, 64, 64);
+    opacity: 1;
+  }
+  
+  .navbar-nav a {
+    font-size: 18px;
+  }
+  
+  section {
+    display: flex;
+  }
+  
+  .container-fulid1 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-fulid1 .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgb(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgb(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+  }
+  .container-fulid1 .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+  .container-fulid1 .card:hover .content {
+    opacity: 1;
+  }
+  .container-fulid1 .card .content .imgBx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgb(0, 0, 0, 0.25);
+  }
+  .imgBx img {
+    height: 200px;
+  }
+  .container-fulid1 .card .content .contentBx h3 {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+  }
+  .container-fulid1 .card .content .contentBx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+    color: rgb(255, 255, 255);
+  }
+  .container-fulid1 .card .sci {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+  }
+  .container-fulid1 .card .sci li {
+    list-style: none;
+    margin: -30px 5px;
+    transform: translateY(60px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.1s * var(--i));
+  }
+  .container-fulid1 .card:hover .sci li {
+    transform: translateY(50px);
+    opacity: 1;
+  }
+  .container-fulid1 .card .sci li a {
+    color: white;
+    font-size: 24px;
+  }
+  .team-description {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    font-family: monospace;
+    padding: 30px;
+    flex-wrap: wrap;
+  }
+  

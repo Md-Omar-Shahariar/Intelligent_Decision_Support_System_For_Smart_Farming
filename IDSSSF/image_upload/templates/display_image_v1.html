@@ -23,7 +23,8 @@
 
     <title>Result</title>
   </head>
-  <body>
+  <body onload="setTimeout(myFunction, 3000)">
+  <div id="loading"></div>
     <div>
       <div>
         <nav class="navbar navbar-expand-md bgc navbar-dark">
@@ -41,9 +42,16 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-              <a class="nav-item nav-link" href="#"><span>Home </span> </a>
-              <a class="nav-item nav-link" href="#"><span>About-Us</span></a>
-              <a class="nav-item nav-link" href="#"><span>Contact-Us</span></a>
+              <a class="nav-item nav-link" href="../../Home1/html/index.html"
+                ><span>Home </span>
+              </a>
+              <a class="nav-item nav-link" href="../../About/html/index.html"
+                ><span>About-Us</span></a
+              >
+
+              <a class="nav-item nav-link" href="../../Home/html/index.html"
+                ><span>Log-Out</span></a
+              >
             </div>
           </div>
         </nav>
@@ -112,19 +120,6 @@
           </div>
         </div>
       </div>
-      <div class="footer-basic">
-        <footer>
-            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#">Services</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            </ul>
-            <p class="copyright">Company Name © 2018</p>
-        </footer>
-    </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -141,5 +136,11 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var preloader = document.getElementById("loading");
+      function myFunction() {
+        preloader.style.display = "none";
+      }
+    </script>
   </body>
 </html>
