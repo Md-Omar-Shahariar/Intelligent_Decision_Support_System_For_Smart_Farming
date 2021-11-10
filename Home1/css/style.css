@@ -27,7 +27,11 @@ nav {
 body {
   width: 100%;
   height: 100vh;
-  background-color: rgb(238, 238, 238);
+  background-color: white;
+}
+h2,
+h1 {
+  color: green;
 }
 
 img {
@@ -76,7 +80,7 @@ img {
   background-color: white;
   padding: 20px 30px;
   border: 1px solid white;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   flex-direction: column;
 }
 .heading {
@@ -108,21 +112,47 @@ img {
   width: calc(100% / 3);
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 
-  justify-content: center;
-  height: 400px;
+  justify-content: flex-start;
+  height: auto;
 
   text-align: center;
   align-items: center;
   border-radius: 100px 100px 100px 100px;
   margin-top: 20px;
+  padding: 20px;
 
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   background: rgba(0, 220, 0, 0.2);
 }
+.card-image {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.img-box {
+  display: flex;
+  width: 100%;
+  height: 200px;
+
+  margin-top: 30px;
+  border-radius: 10px;
+  position: relative;
+
+  overflow: hidden;
+  border: 5px solid green;
+  opacity: 1;
+}
+.img-box img {
+  height: 200px;
+  opacity: 1;
+}
+
 .card1 span.body {
   color: black;
-  padding: 0 50px;
+  padding: 20px 50px;
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 16px;
