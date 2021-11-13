@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+    box-sizing: border-box;
+  }
+  #loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+  
+    background: black url("/static/images/spin1.gif") no-repeat center;
+    z-index: 10000;
+  }
+  .bgc {
+    color: white;
+    background: rgba(3, 77, 2, 0.4);
+    font-weight: bolder;
+  }
+  
+  .container-fluid {
+    width: 100%;
+  }
+  nav {
+    top: 0%;
+    position: relative;
+    position: fixed;
+  }
+  .navbar-brand {
+    font-weight: bolder;
+    font-size: 35px;
+    font-family: "Dancing Script", cursive;
+    margin-left: 30px;
+  }
+  nav span {
+    color: rgb(145, 255, 0);
+  }
+  body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(238, 238, 238);
+  }
+  
+  .container-fluid {
+    display: flex;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .info {
+    margin: 30px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    flex-direction: column;
+    height: 100%;
+  }
+  .heading {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  
+  hr {
+    border: 1px dashed green;
+  }
+  .heading > span {
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-family: monospace;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  }
+  .card1 {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .card1 span {
+    color: black;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 25px;
+  }
+  
+  .left div .res {
+    color: green;
+    font-weight: 900;
+  
+    width: 100%;
+  
+    font-size: 50px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .left div #des {
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  @media (max-width: 1333px) {
+    .description .left {
+      display: flex;
+  
+      width: 100%;
+      /* justify-content: space-evenly; */
+      align-items: center;
+      flex-wrap: wrap;
+  
+      padding: 50px 0;
+      font-weight: 500;
+      font-family: monospace;
+      justify-content: center;
+      padding: 10% 10%;
+    }
+    .left div .res {
+      font-size: 30px;
+    }
+    .imageshow {
+      display: block;
+      align-items: center;
+    }
+    .width {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  @media (max-width: 586px) {
+    .left div .res {
+      font-size: 15px;
+    }
+  }
+  .left div span p {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: monospace;
+  }
+  
+  body {
+    height: 100%;
+  }
+  .imageshow {
+    height: 300px;
+    width: 300px;
+    border: 2px green dashed;
+    border-radius: 10px;
+  }
+  .imageshow img {
+    width: 100%;
+    height: 100%;
+  
+    border-radius: 10px;
+  }
+  .des img .height {
+    height: 200px;
+  }
+  .description {
+    display: flex;
+  
+    width: 100%;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    font-weight: 500;
+    font-family: monospace;
+    justify-content: space-between;
+    padding: 10% 10%;
+  }
+  .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .card1 ul li {
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+  }
+  

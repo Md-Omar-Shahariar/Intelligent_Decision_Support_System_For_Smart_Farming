@@ -133,4 +133,8 @@ def display_images(request):
         solution = SolutionModel.objects.filter(disease_name = str(class_name))
         print(solution)
         print('About = '+ str(solution[0].disease_name))
-        return render(request, 'display_image_v1.html',{'uploaded_images' : Images,'solution':solution[0]})
+
+        if solution[0].disease_name == "Healthy Plant":
+            return render(request, 'healthy_plant.html',{'uploaded_images' : Images})
+        else:
+            return render(request, 'display_image_v1.html',{'uploaded_images' : Images,'solution':solution[0]})
