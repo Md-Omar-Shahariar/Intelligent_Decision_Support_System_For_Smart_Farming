@@ -28,7 +28,7 @@
     <div>
       <div>
         <nav class="navbar navbar-expand-md bgc navbar-dark">
-          <a class="navbar-brand" href="#"><span>Smart Farming</span></a>
+          <a class="navbar-brand" href="{% url "home" %}"><span>Smart Farming</span></a>
           <button
             class="navbar-toggler navbar-toggler-right"
             type="button"
@@ -42,14 +42,14 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-              <a class="nav-item nav-link" href="../../Home1/html/index.html"
+              <a class="nav-item nav-link" href="{% url "home" %}"
                 ><span>Home </span>
               </a>
-              <a class="nav-item nav-link" href="../../About/html/index.html"
+              <a class="nav-item nav-link" href="{% url "about-us" %}"
                 ><span>About-Us</span></a
               >
 
-              <a class="nav-item nav-link" href="../../Home/html/index.html"
+              <a class="nav-item nav-link" href="{% url "logout" %}"
                 ><span>Log-Out</span></a
               >
             </div>

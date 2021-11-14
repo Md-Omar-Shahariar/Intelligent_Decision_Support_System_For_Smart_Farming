@@ -38,6 +38,7 @@ body{
   background-repeat: no-repeat;
   background-size:cover;
   background-blend-mode: screen;
+  font-family: sans-serif;
 }
 header{
   margin: 0;
@@ -47,6 +48,8 @@ header{
 
 
   width: 100%;
+  
+  background-color: rgba(34, 128, 15, 0.4);
 
 
 }
@@ -63,8 +66,9 @@ label.logo{
   font-size: 45px;
   line-height: 80px;
   padding-left: 50px;
-  font-weight: bold;
-  font-family: 'Caveat', cursive;
+
+  font-family: "Dancing Script", cursive;
+  text-transform: capitalize;
 
 }
 .logof{

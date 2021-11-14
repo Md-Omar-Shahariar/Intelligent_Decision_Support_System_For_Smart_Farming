@@ -44,6 +44,22 @@
     width: 100%;
     text-align: center;
   }
+  .welcome-note{
+    display: block;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .welcome-note > h2 {
+    position: relative;
+    color: black;
+    /* font-size: 35px; */
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+  }
   .banner {
     display: block;
     background-color: green;

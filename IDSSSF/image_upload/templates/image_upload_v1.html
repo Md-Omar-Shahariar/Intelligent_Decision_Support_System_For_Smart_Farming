@@ -37,7 +37,7 @@
     <div>
       <header>
         <nav class="navbar navbar-expand-md bgc navbar-dark">
-          <a class="navbar-brand" href="#"><span>Smart Farming</span></a>
+          <a class="navbar-brand" href="http://127.0.0.1:8000/"><span>Smart Farming</span></a>
           <button
             class="navbar-toggler navbar-toggler-right"
             type="button"
@@ -53,11 +53,11 @@
             <div class="navbar-nav ml-auto">
               <a
                 class="nav-item nav-link active"
-                href="../../Home/html/index.html"
+                href="http://127.0.0.1:8000/"
                 >Home
               </a>
-              <a class="nav-item nav-link" href="#"><span>About-Us</span></a>
-              <a class="nav-item nav-link" href="#"><span>Contact-Us</span></a>
+              <a class="nav-item nav-link" href="{% url "about-us" %}"><span>About-Us</span></a>
+          
             </div>
           </div>
         </nav>
